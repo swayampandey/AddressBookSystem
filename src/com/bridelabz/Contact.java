@@ -11,6 +11,20 @@ public class Contact {
 	private long phoneNum;
 	private String emailId;
 	
+	// constructor
+	public  Contact() {} 
+		public Contact(String firstName, String lastName, String Address, String city,String state,int zip,long phoneNum, String emailId) {
+			this.firstName = firstName;
+			this.lastName = lastName;
+			this.Address = Address;
+			this.city = city;
+			this.state = state;
+			this.zip = zip;
+			this.phoneNum = phoneNum;
+			this.emailId = emailId;
+			
+		}
+	
 	/*
 	 *  assigning the values to variable using setter method 
 	 *  taking the values from variable using getter method
