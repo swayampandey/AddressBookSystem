@@ -96,5 +96,18 @@ public class AddressBook {
 			System.out.println(firstName+ " not found ");
 		}
 	}
+	
+	public void deleteContact() {
+		System.out.println("Enter the name of the person to delete");
+		String name = sc.next();
+		for( Contact contact : contactArrayList ) {
+			if(contact.getFirstName().equals(name) || contact.getLastName().equals(name)){
+				contactArrayList.remove(contact);
+				System.out.println(contact.getFirstName()+ "removed successfully !! ");
+				return;
+			}
+		}
+		System.out.println(name+ " not found");
+	}
 
 }
