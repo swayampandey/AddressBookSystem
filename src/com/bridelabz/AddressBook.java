@@ -3,7 +3,7 @@ package com.bridelabz;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class AddressBook {
+public class AddressBook{
 	
 	// creating instance object
 	
@@ -30,6 +30,7 @@ public class AddressBook {
 		System.out.println("Enter email id : ");
 		contact.setEmailId(sc.next());
 		contactArrayList.add(contact);
+		
 	}
 	public void displayContact() {
 		for(int i = 0; i < contactArrayList.size(); i++) {
